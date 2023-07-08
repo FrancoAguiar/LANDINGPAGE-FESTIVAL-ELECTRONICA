@@ -1,0 +1,91 @@
+
+/*  SLIDERBAR DE LOS SPONSORS */
+.slider {
+    margin-top: 5%;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+.slider .slide-track {
+    display: flex;
+    align-items: center;
+    animation: scroll 40s linear infinite;
+    -webkit-animation: scroll 40s linear infinite;
+    width: calc(200px * 14);
+}
+
+.slider .slide {
+    margin: 1vw;
+    width: 4%;
+}
+
+.slider .slide img {
+    width: 100%;
+}
+
+@keyframes scroll {
+    0% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+    100% {
+        -webkit-transform: translateX(calc(-200px * 7));
+        transform: translateX(calc(-200px * 7));
+    }
+}
+
+/* SLIDER BAR DE LOS TEMAS DE LOS DJS */
+
+
+.slider-song {
+    margin-top: 5%;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    position: relative;
+    top: 20%;
+}
+
+@media screen and (max-width: 1400px) {
+    .slider-song {
+        position: relative;
+        top: 25%;
+    }
+}
+
+.slider-song .slide-track-song {
+    display: flex;
+    align-items: center;
+    animation: scroll 40s linear infinite;
+    -webkit-animation: scroll 40s linear infinite;
+    width: calc(500px * 14);
+}
+
+.slider-song .slide-song {
+    margin: 1vw;
+}
+
+.slider-song .slide-song h1 {
+    width: 100%;
+    color: #FFF;
+    opacity: 60%;
+    text-align: center;
+    font-size: 90%;
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 142.4%;
+    text-shadow: 6px 9px 6px rgba(0, 0, 0, 0.35);
+}
+
+@keyframes scroll {
+    0% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+    100% {
+        -webkit-transform: translateX(calc(-200px * 7));
+        transform: translateX(calc(-200px * 7));
+    }
+}
